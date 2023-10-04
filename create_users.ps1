@@ -5,7 +5,7 @@ $organizationalUnits = @('Marketing', 'Sales', 'Finance', 'IT', 'HR', 'Legal')
 $password = "P@ssw0rd"
 $password = ConvertTo-SecureString $password -AsPlainText -Force
 
-# Name file has 1000 names
+# Name file has 997 names
 $names = Get-Content .\names.txt
 
 # Number of users to put into each OU
