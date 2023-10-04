@@ -39,14 +39,14 @@ foreach($name in $names) {
 
     if (-not $userExists) {
         New-AdUser -AccountPassword $password `
-                        -GivenName $first `
-                        -Surname $last `
-                        -DisplayName $username `
-                        -Name $username `
-                        -EmployeeID $username `
-                        -PasswordNeverExpires $true `
-                        -Path "OU=$($organizationalUnits[$j]),$(([ADSI]`"").distinguishedName)" `
-                        -Enabled $true
+                    -GivenName $first `
+                    -Surname $last `
+                    -DisplayName $username `
+                    -Name $username `
+                    -EmployeeID $username `
+                    -PasswordNeverExpires $true `
+                    -Path "OU=$($organizationalUnits[$j]),$(([ADSI]`"").distinguishedName)" `
+                    -Enabled $true
     }
 
     $i++
