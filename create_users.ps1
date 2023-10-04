@@ -51,8 +51,6 @@ foreach($name in $names) {
 
     $i++
 
-    
-
     # Increment to new OU once number of users per OU is reached
     if ($i -eq $numOfUsersPerOU) {
 
