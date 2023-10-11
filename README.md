@@ -27,7 +27,6 @@ $password = ConvertTo-SecureString $password -AsPlainText -Force
 3. Ensure you have the supplied names.txt file in the same directory.
 
 ```powershell
-# Name file has 1000 names
 $names = Get-Content .\names.txt
 ```
 
